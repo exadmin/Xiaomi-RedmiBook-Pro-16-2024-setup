@@ -188,7 +188,8 @@ When installing Windows, delete all partitions on the disk.
 #### Drivers
 
 1. You can install all drivers using the **Windows Update Center**
-2. Or import drivers using `pnputil`, for this:
+   - Windows Update Center requires internet connection. One of the possible ways is to use your mobile phone in modem mode. For instance (example for Samsung S23 Ultra, Android v.14): Settings -> Connections -> Mobile Access Point & Modem -> USB-Modem. Use USB cable to connect smart-phone to the laptop.
+3. Or import drivers using `pnputil`, for this:
    - [Download](https://drive.google.com/drive/folders/1mNBsWjZ1jstHsc_fp29fs57bh0BqbIxR) and unpack the driver archive
    - Import drivers: `pnputil /add-driver C:\drivers\*.inf /subdirs /install`
 
@@ -485,6 +486,7 @@ Boot меню - `F12`
 #### Драйверы
 
 1. Вы можете установить все драйверы с помощью **Центра обновлений Windows**
+   - Windows Update Center требует подключения к интернету. Один из возможных путей - это использовать ваш мобильный телефон в режиме модема. Включается так (пример для Samsung S23 Ultra, Android v.14): Настройки -> Подключения -> Мобильная точка доступа и модем -> USB-модем. Сам телефон подключаете к ноутбуку USB-кабелем.
 2. Или импортировать драйверы с помощью `pnputil`, для этого:
    - [Скачайте](https://drive.google.com/drive/folders/1mNBsWjZ1jstHsc_fp29fs57bh0BqbIxR) и распакуйте архив драйверов
    - Импортируйте драйверы: `pnputil /add-driver C:\drivers\*.inf /subdirs /install`
